@@ -1,0 +1,10 @@
+run host name against all servers
+
+
+ansible multi -a “hostname”
+ansible multi -a “hostname” -f 1 (run without any more forrks					
+ansible multi -a "df -h” (disk space available)
+ansible multi -a “date” (check date is in sync)
+ansible multi -a “free -m” (check free memory)					
+ansible multi -s -m yum -a "name=ntp state=present” (installation) 
+ansible multi -s -m service -a "name=ntpd state=started enabled=yes” (starting a service)
